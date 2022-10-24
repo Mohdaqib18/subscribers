@@ -1,38 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logox{
+  width: 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+.flex-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  transform: scale(0.8);
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#takeaway {
+  background-color: #d2e6ec;
+  transform: scale(0.8);
+  font-size: 27px;
+  padding: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#title {
+  font-size: 65px;
+  font-family: 'Lora', serif;
+  margin:5px 0px 0px 0px
+}
+
+@media only screen and (max-width: 480px) {
+
+  /* For mobile phones: */
+  #title {
+    font-size: x-large;
   }
-  to {
-    transform: rotate(360deg);
+
+  #takeaway {
+    background-color: #d2e6ec;
+    transform: scale(0.7);
+  }
+
+  .logox {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 768px) {
+
+  /* For mobile phones: */
+  #title {
+    font-size: x-large;
+  }
+
+  #takeaway {
+    background-color: #d2e6ec;
+    transform: scale(0.7);
+  }
+
+  .logox {
+    width: 30%;
   }
 }

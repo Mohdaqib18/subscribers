@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import { Subscribers } from './Subscribers';
+import Ylytic from './Ylytic.svg';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="flex-container">
+        <h1 id="title" className="flex-item">Weekly Subscribers Gain and Loss</h1>
+        <img className="logox flex-item" src={Ylytic} />
+      </div>
+      <h2 id="takeaway">Takeaway: Majority of Subscribers are gained in spike(viral) events that mostly occured in Apr - Jun'22</h2>
+      <Subscribers />
     </div>
   );
 }
